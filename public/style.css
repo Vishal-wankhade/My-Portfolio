@@ -16,18 +16,21 @@ html{
 body{
     font-size: 22px;
     background: #F1FAEE;
+    background: white;
     font-family: 'Caveat', cursive;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
 .container{
-    width:100vw;
+    width:90vw;
     height:60px;
-   
+  
 }
 .main{
     height: 420px;
+
 }
+
 
 nav{
     height:60px;
@@ -109,11 +112,11 @@ width: 0px;
 
 }
 .links ul li a:hover{
-    color:#E63946;
+    color:rgb(230, 57, 70);
 }
 .two{
   max-width: 90vw;
- 
+ margin: auto;
 }
 
 
@@ -162,24 +165,26 @@ width: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #457B9D ;
 }
 
 
 .mypic{
-    height: 360px;
-    width: 300px;
+    height: 420px;
+    width: 4220px;
 
-    border-radius: 50%;
-    /* border: 2px solid red; */
+
+
+border-radius: 50%;
   
 }
 .mypic img{
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
- 
+    
     opacity:1;
 }
 .about{
@@ -209,7 +214,7 @@ width: 0px;
     width: 80%;
     text-align: center;
     position: relative;
-    border-radius: 10px;
+    border-radius: 0px!important;
 }
 
 .sk{
@@ -219,15 +224,17 @@ width: 0px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     color:var(--txt);
+    
 }
 .skill h1{
-    padding-top: 2.2rem;
+    padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     color:var(--db);
     z-index: 3;
     background-color: #A8DADC;
+    border-radius: 10px;
 }
 .skill p{
     font-family: 'Roboto Mono', monospace;
@@ -318,7 +325,7 @@ transition: 0.6s;
     height:50px ;
     width: 100%;
     text-align: center;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 .active{
     background-color: #E63946;
@@ -327,28 +334,28 @@ transition: 0.6s;
 .filter button{
     height: 30px;
     padding: 20px;
-    border:1px solid #457B9D;
+    border:2px solid white;
     line-height: 0.2;
     margin-bottom: 1rem;
-  
+    box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
+    font-weight: 700;
 }
 .flex{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
     flex-shrink: 1;
 }
 .all-div{
-    border:4px solid #fff;
+   
     height: 400px;
     margin-top: 1rem !important;
-    margin-left: 1rem !important;  
+    /* margin-left: 1rem !important;   */
     border-radius: 10px;
     overflow: hidden; 
-    border: 3px solid var(--lb);
+    border: 4px solid white;
    transition: 0.7s;
    position: relative;
-   background-color: #a8dadc;
    width: 50%;
 }
 
@@ -360,7 +367,7 @@ transition: 0.6s;
 
 
 .all-div:hover{
-     transform: scale(1.01);
+     transform: scale(1.04);
      -webkit-box-shadow: -1px -1px 22px -6px rgba(0,0,0,0.87);
      -moz-box-shadow: -1px -1px 22px -6px rgba(0,0,0,0.87);
      box-shadow: -1px -1px 22px -6px rgba(0,0,0,0.87);
@@ -372,38 +379,62 @@ transition: 0.6s;
     right: 0;
     bottom: -400;
     position: absolute;
-    background: rgb(2,0,36);
     font-size: 16px;
-    padding: 20px 10px 5px 10px;
+    
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     text-align: center;
-   
-
-    background: linear-gradient(0deg, #A8DADC  0%, #F1FAEE 35%); 
+    /* background: linear-gradient(0deg, #A8DADC  0%, #F1FAEE 35%);  */
+    background-image: url("images/pro2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(60%);
       bottom: -330;
 }
 .all-div:hover .caption{
     bottom: 0;
    }
+   .caption .no-blur{
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.7);
+  display:flex;
+ flex-direction: column;
+justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+ 
+padding: 15px;
+   }
+
 .caption h1 a {
-    color: var(--db);
+    color: #fff;
     font-size: 20px;
     text-align: center;
-    padding: 20px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
+    padding-top: 15px;
 }
 .caption h1 a:hover{
     color: var(--txt);
 }
-.caption p{
-    padding: 40px 10px 10px 10px;
-    color: var(--db);
+.caption .no-blur p{
+    
+    color: #fff;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
+  display: none;
 }
 
+.all-div:hover .caption .no-blur{
+    display:flex;
+ flex-direction: column;
+justify-content: space-around;
+}
+.all-div:hover .caption .no-blur p{
+  display: inline-block;
+}
 
  .show{
     animation: show .5s ease 0s 1 forwards;
@@ -495,13 +526,16 @@ transition: 0.6s;
     margin: auto;
     background-color:var(--db);
     color: white;
+    border: 2px solid white;
+    font-weight: 700;
 }
 .form button:hover{
  background-color: #E63946;
  color: white;
  transition: 0.3s;
- border: black;
+ border: 2px solid white;
  box-shadow: 1px 10px 24px -9px rgba(29,53,87,1);
+ font-weight: 700;
 }
 .icon_wrapper{
     height: 60px;
@@ -565,8 +599,7 @@ margin-top:50px;
     color: var(--txt);
     border: none;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 700;
-   
+    font-weight: 700;  
     position: relative;
     background-color: transparent;
     
@@ -733,6 +766,9 @@ input[type="text"], input[type="password"], textarea {
     .caption{
         bottom: -278px;
     }
+    .text{
+        padding-top: 0rem ;
+    }
   }
 
  
@@ -778,7 +814,7 @@ input[type="text"], input[type="password"], textarea {
       
     }
     .mypic{
-        height:400px;
+        height:320px;
     
     }
 
@@ -865,3 +901,7 @@ input[type="text"], input[type="password"], textarea {
      right: 10px;
     }
   }
+
+
+  
+
