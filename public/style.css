@@ -851,6 +851,9 @@ input[type="text"], input[type="password"], textarea {
     .about {
         height: max-content;
     }
+     .about h1{
+        padding-top: 0px;
+    }
     .about p{
         padding: 1rem;
     }
