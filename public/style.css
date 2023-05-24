@@ -10,13 +10,12 @@ html{
 }
 :root {
     --txt:#E63946;
-    --db:#1D3557;
-    --lb:#457B9D;
+    --db:#000;
+    --lb:#000;
 }
 body{
     font-size: 22px;
-    background: #F1FAEE;
-    background: white;
+    background:#fff;
     font-family: 'Caveat', cursive;
     /* overflow-x: hidden; */
 
@@ -62,7 +61,7 @@ nav{
 font-weight: 700;
 letter-spacing: 3px;
 margin: 0px 10px;
-color:#1D3557;
+color:#000;
 
 }
 .title p span{
@@ -94,7 +93,7 @@ color:#1D3557;
     /* font-size: 1.2rem; */
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
-    color:#1D3557;
+    color:#000;
     position: relative;
 }
 .links ul li a::after{
@@ -165,7 +164,6 @@ width: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 
@@ -240,8 +238,9 @@ border-radius: 50%;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     color:var(--lb);
-
 }
+
+
 .card-body{
     z-index: 4;
 }
@@ -437,12 +436,16 @@ justify-content: space-around;
 }
 
  .show{
-    animation: show .5s ease 0s 1 forwards;
-    /* transform-origin: center; */
+   
+    display: block;
+    transition: 0.4s;
+    transform-origin: center;
 }
 .hide{
-    animation: hide .5s ease 0s 1 forwards;
-    /* transform-origin: center; */
+   
+    display: none;
+    transition: 0.4s;
+    transform-origin: center;
 }
 .ex-row{
     margin-top:3rem!important;
@@ -612,19 +615,25 @@ margin-top:50px;
 
 
 .cv a{
-    color:#E63946;
+    background-color:#E63946;
+    color: #fff;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     letter-spacing: 3px;
     text-decoration: none;
-    border: 0px solid #E63946;
     border-width: 0px;
     padding: 10px;
+    box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
+    border: 2px solid #fff;
     
 }
 .cv a:hover{
-    border: 2px solid #E63946;
-    color: #E63946;
+    
+   /* background-color: #fff;
+   color:#E63946; */
+   color: #fff;
+   outline:2px solid #E63946;
+   outline: offset 10px;
     box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
 }
   
@@ -679,30 +688,7 @@ text-align: center;
             color:#E63946;
             opacity: 1;
         }
-@keyframes hide {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0);
-        width: 0;
-        height: 0;
-        margin: 0;
-    }
-}
-@keyframes show {
-    0%{
-      
-        transform: scale(0);
-        width: 0;
-        height: 0;
-        margin: 0;
-    }
-    100%{
-        transform: scale(1);
-       
-    }
-}
+
 .bar{
     display:none;
     height: 100px;
@@ -715,7 +701,7 @@ text-align: center;
     color: #E63946;
 }
 .bar-color{
-    color:#457B9D;
+    color:#000;
 }
 .bro-text .lc{
     font-weight: 700;
@@ -743,8 +729,8 @@ input[type="text"], input[type="password"], textarea {
         position: absolute;
         top:50px;
         right:0px;
-        background-color:#F1FAEE;
-        border: 2px solid #457B9D;
+        background-color:#fff;
+        box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
         display: none;
         z-index: 3;
     }
@@ -769,6 +755,11 @@ input[type="text"], input[type="password"], textarea {
     .text{
         padding-top: 0rem ;
     }
+    .cv a{
+        letter-spacing: normal;
+        font-size: 16px;
+        padding: 10px;
+    }
   }
 
  
@@ -789,8 +780,8 @@ input[type="text"], input[type="password"], textarea {
         position: absolute;
         top:50px;
         right:0px;
-        background-color:#F1FAEE;
-        border: 2px solid #457B9D;
+        background-color:#fff;
+        
         display: none;
         z-index: 3;
     }
@@ -851,7 +842,7 @@ input[type="text"], input[type="password"], textarea {
     .about {
         height: max-content;
     }
-     .about h1{
+    .about h1{
         padding-top: 0px;
     }
     .about p{
