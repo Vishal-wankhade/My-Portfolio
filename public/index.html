@@ -34,7 +34,7 @@
 <style>
   input{
     border: none;
-    border-bottom: 2px solid #1D3557!important;
+    border-bottom: 2px solid gray!important;
     border-top: none!important;
     border-left: none!important;
     border-right: none!important;
@@ -63,17 +63,17 @@
   
  }
  textarea.form-control::placeholder{
-  color: var(--para);
+  color: gray;
  }
  input[type="email"]::placeholder{
-  color: var(--para);
+  color: gray;
  }
  input[type="text"]::placeholder{
-  color: var(--para);
+  color: gray;
  }
   textarea.form-control{
     border: none;
-    border-bottom: 2px solid #1D3557!important;
+    border-bottom: 2px solid gray!important;
     border-top: none!important;
     border-left: none!important;
     border-right: none!important;
@@ -167,9 +167,15 @@
     <div class="container-fluid two set" >
       <div class="row">
         <h1 class="sk" id="sk">Skills</h1>
-        <div class="card skill col-12 col-sm-4">
+
+        <div class="card-wrap col-12 col-sm-12">
+
+        <div class="card skill col-12 col-sm-12">
           <h1>FRONTEND</h1>
           <div class="card-body p-2">
+          <div class="sk-img">
+            <img src="images/fr.svg" alt="">
+          </div>
              <p>HTML5 & CSS3</p>
              <p>ReactJs</p>
              <p>Boostrap</p>
@@ -178,26 +184,34 @@
            </div>
         </div>
 
-        <div class="card skill col-12 col-sm-4">
+        <div class="card skill col-12 col-sm-12">
           <h1 style="font-size: 30px;">BACKEND & DATABASE</h1>
           <div class="card-body p-2">
+            <div class="sk-img">
+              <img src="images/db.svg" alt="">
+            </div>
              <p>NodeJS</p>
              <p>Php</p>
              <p>SQL</p>
              <p>ExpressJS</p>
              <p>MongoDB</p>
            </div>
-
         </div>
-        <div class="card skill col-12 col-sm-4">
+
+        <div class="card skill col-12 col-sm-12">
           <h1>PROGRAMMING</h1>
           <div class="card-body p-2">
+            <div class="sk-img">
+              <img src="images/java.svg" alt="">
+            </div>
              <p>Java</p>
              <p>Data structure</p>
              <p>Algorithms</p>
            </div>
-
         </div>
+
+      </div>
+
       </div>
     </div>    
     
