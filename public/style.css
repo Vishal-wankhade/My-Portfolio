@@ -14,6 +14,7 @@ html{
     --para:#000;
     --cvbg:#E63946;
     --cvtxt:#fff;
+
 }
 .row{
     margin-top: 3rem!important;
@@ -25,6 +26,7 @@ body{
     /* overflow-x: hidden; */
 
 }
+
 .container{
     width:90vw;
     height:60px;
@@ -269,6 +271,7 @@ border-radius: 50%;
     border: 5px solid #fff!important;
     border-radius: 15px!important;
     max-height: 560px;
+    background: #fff;
     box-shadow: -5px 8px 41px 18px rgba(200, 199, 199, 0.2) inset;
     box-shadow: 1px 10px 24px -9px rgba(44, 44, 44, 0.615);
 }
@@ -278,9 +281,11 @@ border-radius: 50%;
 }
 .sk-img{
   height: 50%;
+  max-height: 350px;
 }
 .sk-img img{
     height: 100%;
+    width:95%;
   }
 .skill::before{
    
@@ -327,7 +332,7 @@ border-radius: 50%;
     width: 30px;
     transition: 0.4s;
 }
-/* .themes button:hover{
+.themes button:hover{
    transform: scale(1.1);
     
 }
@@ -339,7 +344,7 @@ border-radius: 50%;
 }
 .th-3{
     background-color: purple;
-} */
+}
 
 .projects{
     height: max-content;
@@ -911,6 +916,9 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
     .skill:not(.skill:first-child){
      margin-top: 30px;
     }
+    .all-div{
+        width: 100%;
+    }
   }
 
  
@@ -969,6 +977,7 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
     }
     .text p{
         padding: 1rem 1rem 0rem 1rem; 
+      
     }
     /* .text ul{
         width: 90%;
@@ -993,6 +1002,7 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
     }
     .about p{
         padding: 1rem;
+        
     }
     .filter button{
         padding: 3.5%;
@@ -1023,6 +1033,12 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
     }
     .social-media ul{
         width: 90%;
+    }
+    .life h1{
+        font-size: 20px;
+    }
+    .life h3{
+        font-size: 18px;
     }
 
   }
