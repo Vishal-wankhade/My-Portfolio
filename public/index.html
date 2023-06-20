@@ -289,7 +289,7 @@
             <img src="images/furniture.png" data-item="web" alt="">
             <div class="caption">
               <div class="no-blur">
-              <h1><a href="" target="_blank" rel="api project">Room Furniture Shop</a></h1>
+              <h1><a href="https://room-furniture-shop-homepage.onrender.com/" target="_blank" rel="api project" class="room">Room Furniture Shop</a></h1>
               <p>HTML5 | CSS3 | REACTJS | Modern JavaScript</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, magnam!</p>
             </div>
@@ -543,7 +543,23 @@ filter.addEventListener("click", (e)=>{
   </script>
      
 <script>
-  
+  function isMobileScreen() {
+  return window.innerWidth <= 768; // Adjust the threshold as per your requirements
+}
+
+// Change the image source based on the screen size
+function changeImageOnMobile() {
+  var image = document.querySelector('.room'); // Replace 'myImage' with the ID of your image element
+
+  if (isMobileScreen()) {
+    image.src = 'images/room-mobile.jpg'; // Replace 'mobile-image.jpg' with the path to your mobile image
+  } else {
+    image.src = 'images/furniture.png';  // Replace 'desktop-image.jpg' with the path to your desktop image
+  }
+}
+
+// Call the function on page load
+window.addEventListener('load', changeImageOnMobile);
  </script>
 
 
