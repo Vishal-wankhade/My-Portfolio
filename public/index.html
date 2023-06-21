@@ -125,12 +125,14 @@
               extraordinary things. </p>
 
 
-              <!-- <div class="themes">
-                  <button class="th"></button>
-                  <button class="th-2"></button>
-                  <button class="th-3"></button>
-              <button class="th-3"></button>
-              </div> -->
+              <div class="themes">
+                  <button class="th" onclick="changeColorTheme('light');"></button>
+                  <button class="th-2" onclick="changeColorTheme('dark');" ></button>
+                  <button class="th-3" onclick="changeColorTheme('blue');"></button>
+              <button class="th-4" onclick="changeColorTheme('purple');"></button>
+              
+              </div>
+              <span class="try">Try different Color Themes</span>
               
         </div>
         <div class="img col-12 col-sm-6">
@@ -598,26 +600,89 @@ window.addEventListener('load', changeImageOnMobile);
     }
     </script>
 
-<!-- <script>
-  const root = document.querySelector(":root");
-  const body = document.querySelector("body");
-  const skill = document.querySelector(".skill");
-  const theme_2 = document.querySelector(".th-2");
+<script>
+  // Function to change the color theme
+// Function to change the color theme
+function changeColorTheme(theme) {
+
+  var root = document.documentElement; 
+  var body = document.body;
+  // Get the reference to the root element
+
+  // Define the color themes
+  var colorThemes = {
+    light: {
+      '--txt': '#E63946',
+      '--main': '#000',
+      '--para': '#000',
+      '--cvbg': '#E63946',
+      '--cvtxt': '#fff',
+      '--skillCardBg':'#fff',
+      '--barBG':'#fff',
+    '--bartxt':'#000',
+      'body-bg': '#ffffff'
+    },
+    dark: {
+      '--txt': '#F1F6F9',
+      '--main': '#9BA4B5',
+      '--para': '#9BA4B5',
+      '--cvbg': '#394867',
+      '--cvtxt': '#F1F6F9',
+      '--skillCardBg':'#394867',
+      '--barBG':'#394867',
+    '--bartxt':'#F1F6F9',
+      'body-bg': '#212A3E'
+    },
+    blue: {
+      '--txt': '#0100A4',
+      '--main': '#0000FE',
+      '--para': '#7D7DFF',
+      '--cvbg': '#0000FE',
+      '--cvtxt': '#F1F6F9',
+      '--skillCardBg':'#01004E',
+      '--barBG':'#FDFDFF',
+    '--bartxt':'#0100A4',
+      'body-bg': '#FDFDFF'
+    },
+    purple: {
+      '--txt': '#FF6D00',
+      '--main': '#3C096C',
+      '--para': '#5A189A',
+      '--cvbg': '#3D348B',
+      '--cvtxt': '#F1F6F9',
+      '--skillCardBg':'#9D4EDD',
+      '--barBG':'#9D4EDD',
+    '--bartxt':'##FF6D00',
+      'body-bg': '#f0fff1'
+    }
+  };
+
+  // Update the CSS variables with the selected color theme
+  var selectedTheme = colorThemes[theme];
+  for (var key in selectedTheme) {
+    if (key === 'body-bg') {
+      body.style.backgroundColor = selectedTheme[key];
+    } else {
+      root.style.setProperty(key, selectedTheme[key]);
+    }
+  }
+
+  // Store the selected theme in localStorage
+  localStorage.setItem('colorTheme', theme);
+}
+
+// Check if a color theme is already stored in localStorage
+var storedTheme = localStorage.getItem('colorTheme');
+if (storedTheme) {
+  changeColorTheme(storedTheme); // Apply the stored color theme
+}
+
+// Example usage: Change the color theme to 'dark'
+// changeColorTheme('dark')
 
 
-theme_2.addEventListener("click", ()=>{
 
-  root.style.setProperty("--txt", "#DDE6ED")
-  root.style.setProperty("--para", "#9DB2BF")
-  root.style.setProperty("--main", "#9DB2BF")
-  body.style.setProperty("background", "#27374D")
-  skill.style.setProperty("background", "#27374D")
-  skill.style.setProperty("borderColor", "#DDE6ED")
-
-})
-
-
-</script> -->
+</script>
 
 
 
