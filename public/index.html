@@ -243,7 +243,7 @@
 
         
         <div class="all-div web col-12 col-sm-6">
-          <img src="images/space.png" data-item="web" alt="">
+          <img src="images/space.png" data-item="web" alt="space web img" class="space">
           <div class="caption">
             <div class="no-blur">
               <h1><a href="https://space-tourism-multipage-site.onrender.com/" target="_blank" rel="project">Space Tourism
@@ -259,7 +259,7 @@
 
         
           <div class="all-div web col-12 col-sm-6">
-            <img src="images/loopStudio.png" data-item="web" alt="">
+            <img src="images/loopStudio.png" data-item="web" alt="loop img" class="loop">
           <div class="caption">
             <div class="no-blur">
             <h1><a href="https://vishal-wankhade.github.io/Loopstudios-logo/" target="_blank" rel="loop project">Loop Studio Landing Studio</a></h1>
@@ -273,10 +273,10 @@
       
         
         <div class="all-div app col-12 col-sm-6" >
-          <img src="images/shoeShop.png" data-item="web" alt="">
+          <img src="images/shoeShop.png" data-item="web" alt="shoe img" class="shoe">
           <div class="caption">
             <div class="no-blur">
-            <h1><a href="https://shoe-shopping-page.netlify.app/" target="_blank" rel="api project">Shoe Shoping Page</a></h1>
+            <h1><a href="https://shoe-shopping-page.netlify.app/" target="_blank" rel="shoe project">Shoe Shoping Page</a></h1>
             <p>HTML5 | CSS3 | REACTJS| Modern JavaScript</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, magnam!</p>
           </div>
@@ -286,10 +286,10 @@
        
         
           <div class="all-div app col-12 col-sm-6">
-            <img src="images/furniture.png" data-item="web" alt="" class="room">
+            <img src="images/furniture.png" data-item="web" alt="room img" class="room">
             <div class="caption">
               <div class="no-blur">
-              <h1><a href="https://room-furniture-shop-homepage.onrender.com/" target="_blank" rel="api project" class="room">Room Furniture Shop</a></h1>
+              <h1><a href="https://room-furniture-shop-homepage.onrender.com/" target="_blank" rel="room project">Room Furniture Shop</a></h1>
               <p>HTML5 | CSS3 | REACTJS | Modern JavaScript</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, magnam!</p>
             </div>
@@ -549,16 +549,26 @@ filter.addEventListener("click", (e)=>{
 
 // Change the image source based on the screen size
 function changeImageOnMobile() {
-  var image = document.querySelector('.room'); // Replace 'myImage' with the ID of your image element
+  var roomImg = document.querySelector('.room');
+  var spaceImg = document.querySelector('.space');
+  var shoeImg = document.querySelector('.shoe');
+  var loopImg = document.querySelector('.loop');// Replace 'myImage' with the ID of your image element
 
   if (isMobileScreen()) {
-    image.src = 'images/room-mobile.jpg'; // Replace 'mobile-image.jpg' with the path to your mobile image
+    roomImg.src = 'images/room-mobile.jpg';
+    spaceImg.src = 'images/space-mobile.jpg';
+    shoeImg.src = 'images/shoe-mobile.jpg';
+    loopImg.src = 'images/loop-mobile.jpg';// Replace 'mobile-image.jpg' with the path to your mobile image
   } else {
-    image.src = 'images/furniture.png';  // Replace 'desktop-image.jpg' with the path to your desktop image
+    roomImg.src = 'images/furniture.png'; 
+    spaceImg.src='images/space.png';
+    shoeImg.src='images/shoeShop.png';
+    loopImg.src='images/loopStudio.png';
+    // Replace 'desktop-image.jpg' with the path to your desktop image
   }
 }
 
-// Call the function on page load
+// Call the function on the page load
 window.addEventListener('load', changeImageOnMobile);
  </script>
 
