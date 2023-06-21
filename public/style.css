@@ -330,7 +330,7 @@ border-radius: 50%;
     border-radius: 50%;
     border:3px solid white;
 }
-.th, .th-2, .th-3 , th-4{
+.th, .th-2, .th-3 , .th-4{
     border:2px solid var(--main);
     height: 30px;
     width: 30px;
@@ -616,7 +616,7 @@ form button:hover{
  color: white;
  transition: 0.3s;
  border: 2px solid white;
- box-shadow: 1px 10px 24px -9px rgba(29,53,87,1);
+ box-shadow: 1px 10px 24px -9px rgba(29,53,87,1;
  font-weight: 700;
 }
 .icon_wrapper{
@@ -697,7 +697,7 @@ textarea{
 }
 .bro-text button:hover{
     border:2px solid var(--txt);
-    box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
+    box-shadow: 1px 10px 24px -9px var(--txt);
 }
 
 .cv{
@@ -716,7 +716,7 @@ textarea{
     text-decoration: none;
     border-width: 0px;
     padding: 10px;
-    box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
+    box-shadow: 1px 10px 24px -9px var(--txt);
     border: 2px solid #fff;
     
 }
@@ -727,7 +727,7 @@ textarea{
    color: #fff;
    outline:2px solid var(--txt);
    outline: offset 10px;
-    box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
+    box-shadow: 1px 10px 24px -9px var(--txt);
 }
 .social-media p{
     padding-bottom: 5px;
