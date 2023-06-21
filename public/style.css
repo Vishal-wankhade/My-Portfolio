@@ -9,11 +9,14 @@ html{
 
 }
 :root {
-    --txt:#E63946;
+   --txt:#E63946;
     --main:#000;
     --para:#000;
     --cvbg:#E63946;
     --cvtxt:#fff;
+    --skillCardBg:#fff;
+    --barBG:#fff;
+    --bartxt:#000;
 
 }
 .row{
@@ -271,7 +274,7 @@ border-radius: 50%;
     border: 5px solid #fff!important;
     border-radius: 15px!important;
     max-height: 560px;
-    background: #fff;
+    background:var(--skillCardBg) !important;
     box-shadow: -5px 8px 41px 18px rgba(200, 199, 199, 0.2) inset;
     box-shadow: 1px 10px 24px -9px rgba(44, 44, 44, 0.615);
 }
@@ -315,7 +318,7 @@ border-radius: 50%;
 
 .text .themes{
     width: 120px;
-    border:1px solid #5f3c1b;
+    
     height: 50px;
     margin-left: 3rem;
     margin-top: 50px;
@@ -325,8 +328,9 @@ border-radius: 50%;
 }
 .themes button{
     border-radius: 50%;
+    border:3px solid white;
 }
-.th, .th-2, .th-3{
+.th, .th-2, .th-3 , th-4{
     border:2px solid var(--main);
     height: 30px;
     width: 30px;
@@ -336,16 +340,23 @@ border-radius: 50%;
    transform: scale(1.1);
     
 }
-.th{
-    background-color: #E63946;
-}
 .th-2{
-    background-color: #000;
+    background-color: #212A3E;
 }
 .th-3{
-    background-color: purple;
+    background-color: #0100A4;
 }
-
+.th-4{
+    background-color:#FF6D00;
+}
+.try{
+    
+    padding-left: 3rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--main);
+}
 .projects{
     height: max-content;
     width:90vw;
@@ -601,7 +612,7 @@ form button{
     font-weight: 700;
 }
 form button:hover{
- background-color: #E63946;
+ background-color: var(--txt);
  color: white;
  transition: 0.3s;
  border: 2px solid white;
@@ -866,8 +877,8 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
         position: absolute;
         top:50px;
         right:0px;
-        background-color:#fff;
-        box-shadow: 1px 10px 24px -9px rgba(230,57,70,1);
+         background-color:var(--barBG);
+        box-shadow: 1px 10px 24px -9px var(--txt);
         display: none;
         z-index: 3;
     }
@@ -882,6 +893,9 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+      .links ul li{
+        color: var(--bartxt);
     }
     .bro{
         flex-direction: column;
@@ -919,6 +933,11 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
     .all-div{
         width: 100%;
     }
+      .try
+      {
+          padding:0px;
+          text-align:center;
+      }
   }
 
  
@@ -939,8 +958,7 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
         position: absolute;
         top:50px;
         right:0px;
-        background-color:#fff;
-        
+       background-color:var(--barBG);
         display: none;
         z-index: 3;
     }
@@ -1040,6 +1058,11 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
     .life h3{
         font-size: 18px;
     }
+     .try
+      {
+          padding:0px;
+          text-align:center;
+      }
 
   }
   @media screen and (max-width:400px){
@@ -1065,6 +1088,11 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
     .skill p:last-child {
         padding-bottom: 30px;
     }
+       .try
+      {
+          padding:0px;
+          text-align:center;
+      }
 
 }
   @media screen and (max-width: 400px){
@@ -1075,12 +1103,23 @@ input[type="text"], input[type="password"], input[type="email"],  textarea.form-
        right: 20px;
         
     }
+
+       .try
+      {
+          padding:0px;
+          text-align:center;
+      }
     
   } 
   @media screen and (max-width: 350px){
     .bar{
      right: 10px;
     }
+       .try
+      {
+          padding:0px;
+          text-align:center;
+      }
   }
 
 
