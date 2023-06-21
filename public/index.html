@@ -304,7 +304,7 @@
           <img src="images/fr3.png" data-item="web" alt="Frontend mentor profile">
           <div class="caption">
             <div class="no-blur">
-            <h1><a href="" target="_blank" rel="api project">490 + Score on Frontend Mentor</a></h1>
+            <h1><a href="https://www.frontendmentor.io/profile/Vishal-wankhade" target="_blank" rel="api project">490 + Score on Frontend Mentor</a></h1>
             
             <p>Frontend Mentor provides designs so that you can practice your front-end skills using a
                real-life workflow. These challenges include designs (both mobile and desktop), assets, and
@@ -552,12 +552,21 @@ function isMobileScreen() {
 
 // Change the image source based on the screen size
 function changeImageOnMobile() {
-  var image = document.querySelector('.img-five'); // Replace 'myImage' with the ID of your image element
+  var spaceImg = document.querySelector('.space');
+  var roomImg = document.querySelector('.room'); 
+  var shoeImg = document.querySelector('.shoe'); 
+  var loopImg = document.querySelector('.loop');  // Replace 'myImage' with the ID of your image element
 
   if (isMobileScreen()) {
-    image.src = 'images/fr3.png'; // Replace 'mobile-image.jpg' with the path to your mobile image
+    roomImg.src = 'images/room-mobile.jpg';
+    spaceImg.src = 'images/space-mobile.jpg';
+    shoeImg.src = 'images/shoe-mobile.jpg';
+    loopImg.src = 'images/loop-mobile.jpg'; // Replace 'mobile-image.jpg' with the path to your mobile image
   } else {
-    image.src = 'images/comingsoon.png';  // Replace 'desktop-image.jpg' with the path to your desktop image
+    roomImg.src = 'images/furniture.png'; 
+    shoeImg.src = 'images/shoeShop.png';  
+    spaceImg.src = 'images/space.png';  
+    loopImg.src = 'images/loopStudio.png';   // Replace 'desktop-image.jpg' with the path to your desktop image
   }
 }
 
