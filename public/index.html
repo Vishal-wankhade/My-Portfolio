@@ -133,7 +133,6 @@
               
               </div>
               <span class="try">Try different Color Themes</span>
-              
         </div>
         <div class="img col-12 col-sm-6">
           
@@ -305,7 +304,7 @@
           <img src="images/fr3.png" data-item="web" alt="Frontend mentor profile">
           <div class="caption">
             <div class="no-blur">
-            <h1><a href="" target="_blank" rel="api project">500+ Score on Frontend Mentor</a></h1>
+            <h1><a href="" target="_blank" rel="api project">490 + Score on Frontend Mentor</a></h1>
             
             <p>Frontend Mentor provides designs so that you can practice your front-end skills using a
                real-life workflow. These challenges include designs (both mobile and desktop), assets, and
@@ -316,6 +315,7 @@
 
 
       </div>
+       
        
       </div>
     </div>
@@ -361,7 +361,7 @@
                      <p><span>Address:</span>Amravati , Maharashtra, India . 444605</p>
 
                      <p class="cv"><a
-                      href="https://drive.google.com/file/d/1l2htx56Dx6yCWMiYt13KagyR2DPUvRl-/view?usp=sharing">
+                      href="https://docs.google.com/document/d/1-ho-uiqkHd4q5dtFJGnaVprcWhvh1mKK/edit?usp=share_link&ouid=110995110057659507127&rtpof=true&sd=true">
                      Download My CV</a></p>
 
                      <div class="social-media">
@@ -545,33 +545,25 @@ filter.addEventListener("click", (e)=>{
   </script>
      
 <script>
-  function isMobileScreen() {
+  // Check if the website is being viewed on a mobile screen
+function isMobileScreen() {
   return window.innerWidth <= 768; // Adjust the threshold as per your requirements
 }
 
 // Change the image source based on the screen size
 function changeImageOnMobile() {
-  var roomImg = document.querySelector('.room');
-  var spaceImg = document.querySelector('.space');
-  var shoeImg = document.querySelector('.shoe');
-  var loopImg = document.querySelector('.loop');// Replace 'myImage' with the ID of your image element
+  var image = document.querySelector('.img-five'); // Replace 'myImage' with the ID of your image element
 
   if (isMobileScreen()) {
-    roomImg.src = 'images/room-mobile.jpg';
-    spaceImg.src = 'images/space-mobile.jpg';
-    shoeImg.src = 'images/shoe-mobile.jpg';
-    loopImg.src = 'images/loop-mobile.jpg';// Replace 'mobile-image.jpg' with the path to your mobile image
+    image.src = 'images/fr3.png'; // Replace 'mobile-image.jpg' with the path to your mobile image
   } else {
-    roomImg.src = 'images/furniture.png'; 
-    spaceImg.src='images/space.png';
-    shoeImg.src='images/shoeShop.png';
-    loopImg.src='images/loopStudio.png';
-    // Replace 'desktop-image.jpg' with the path to your desktop image
+    image.src = 'images/comingsoon.png';  // Replace 'desktop-image.jpg' with the path to your desktop image
   }
 }
 
-// Call the function on the page load
+// Call the function on page load
 window.addEventListener('load', changeImageOnMobile);
+
  </script>
 
 
@@ -601,7 +593,7 @@ window.addEventListener('load', changeImageOnMobile);
     </script>
 
 <script>
-  // Function to change the color theme
+ // Function to change the color theme
 // Function to change the color theme
 function changeColorTheme(theme) {
 
@@ -679,7 +671,6 @@ if (storedTheme) {
 
 // Example usage: Change the color theme to 'dark'
 // changeColorTheme('dark')
-
 
 
 </script>
